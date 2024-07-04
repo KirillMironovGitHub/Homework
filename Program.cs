@@ -36,3 +36,16 @@ class Program
         Console.WriteLine($"Ackermann({m}, {n}) = {result}");
     }
 }
+
+
+void ReverseArray(int []array, int index)
+{
+   
+    if (index >= 0)
+    {
+        Console.Write(array[index] + " ");
+        ReverseArray(array, index -1);
+    }
+}
+
+ReverseArray([1, 2, 5, 0, 10, 34], 5);
